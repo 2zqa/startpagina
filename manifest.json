@@ -1,0 +1,9 @@
+{
+  "name": "startpage",
+  "description": "Override your new tab with marijnables one",
+  "version": "1.0",
+  "chrome_url_overrides": {
+    "newtab": "blank.html"
+  },
+  "manifest_version": 2
+}
