@@ -2,6 +2,9 @@
 	"name": "Startpagina",
 	"description": "Marijnables startpagina, met handige links",
 	"version": "1.2",
+	"icons": {
+		"48": "logo.png"
+	},
 	"chrome_url_overrides": {
 		"newtab": "blank.html"
 	},
