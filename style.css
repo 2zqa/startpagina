@@ -1,39 +1,41 @@
-/* Basics, flexbox*/
+/* Arc color scheme by horst3180 */
 
 
-/***
-
-Structure idea: Bookmarks in center, clock centered between page top and bookmarks
-
-***/
-
-
-/* Tomorrow Night color scheme by Chris Kempson */
+/* Arc-dark */
 
 :root {
-	--BG: #1d1f21;
-	--FG: #c5c8c6;
-	--eight: #969896;
-	--four: #81a2be;
+	/* Arc-dark */
+	--BG: rgb(47, 52, 63);
+	--FG: rgb(82, 148, 226);
+	--HEADER: rgb(255, 255, 255);
+	--TEXT: rgb(211, 218, 227);
+	--BACKDROP: rgba(53, 57, 69, 0.95);
 }
+
+@media (prefers-color-scheme: light) {
+	:root {
+		/* Arc */
+		--BG: rgb(231, 232, 235);
+		--FG: rgb(82, 148, 226);
+		--HEADER: rgb(255, 255, 255);
+		--TEXT: rgb(59, 62, 69);
+	}
+}
+
+
+/* Basics */
 
 html {
 	height: 100%;
 }
 
 body {
-	/*
-	Basics*/
-	height: 100%;
-	margin: 0;
-	/*
-	Background*/
-	background-color: var(--BG);
-	/*
-	Flexbox*/
 	display: flex;
 	flex-direction: column;
 	align-items: stretch;
+	height: 100%;
+	margin: 0;
+	background-color: var(--BG);
 }
 
 .row {
@@ -43,19 +45,13 @@ body {
 	flex-grow: 1;
 }
 
-@media only screen and (max-height: 600px) {
-	.hide {
-		display: none;
-	}
-}
-
 
 /* Clock */
 
 .clock {
 	font-size: 50px;
 	font-weight: 200;
-	color: var(--FG);
+	color: var(--TEXT);
 	font-family: monospace;
 }
 
@@ -70,12 +66,12 @@ a {
 }
 
 h1 {
-	color: var(--BG);
+	color: var(--HEADER);
 }
 
 a {
 	text-decoration: none;
-	color: var(--four);
+	color: var(--TEXT);
 }
 
 .bookmarks {
@@ -83,7 +79,7 @@ a {
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: flex-start;
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: var(--BACKDROP);
 	padding: 10px;
 }
 
@@ -115,5 +111,14 @@ ul li ul li {
 
 li:before {
 	content: "> ";
-	color: var(--four);
+	color: var(--TEXT);
+}
+
+
+/* Media rules */
+
+@media only screen and (max-height: 600px) {
+	.hide {
+		display: none;
+	}
 }
