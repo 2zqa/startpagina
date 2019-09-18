@@ -83,8 +83,9 @@ a {
 	padding: 10px;
 }
 
-.container {
+.card {
 	background-color: var(--BG);
+	min-width: 9em;
 	margin: 10px;
 }
 
