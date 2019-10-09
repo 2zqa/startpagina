@@ -9,7 +9,7 @@
 	--FG: rgb(82, 148, 226);
 	--HEADER: rgb(255, 255, 255);
 	--TEXT: rgb(211, 218, 227);
-	--BACKDROP: rgba(53, 57, 69, 0.95);
+	--BACKDROP: rgb(64, 69, 82);
 }
 
 @media (prefers-color-scheme: light) {
