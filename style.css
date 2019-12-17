@@ -13,7 +13,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-	:root {
+	 :root {
 		/* Arc */
 		--BG: rgb(231, 232, 235);
 		--FG: rgb(82, 148, 226);
