@@ -1,2 +1,0 @@
-#!/bin/bash
-zip -r ../Startpagina.zip * -x *.git* README* LICENSE prepareExtension

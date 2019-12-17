@@ -1,7 +1,7 @@
 {
 	"name": "Startpagina",
-	"description": "Marijnables startpagina, met handige links",
-	"version": "1.4",
+	"description": "2zqa's startpagina, met handige links",
+	"version": "1.5",
 	"icons": {
 		"48": "logo.png"
 	},
@@ -11,6 +11,6 @@
 	"chrome_settings_overrides": {
 		"homepage": "blank.html"
 	},
-	"homepage_url": "https://github.com/marijnable/Startpagina",
+	"homepage_url": "https://github.com/2zqa/Startpagina",
 	"manifest_version": 2
 }
