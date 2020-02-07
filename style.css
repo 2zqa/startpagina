@@ -1,9 +1,8 @@
 /* Arc color scheme by horst3180 */
 
-
-/* Arc-dark */
-
 :root {
+	--FONT: "Ubuntu Mono", "monospace";
+
 	/* Arc-dark */
 	--BG: rgb(47, 52, 63);
 	--FG: rgb(82, 148, 226);
@@ -19,7 +18,7 @@
 		--FG: rgb(82, 148, 226);
 		--HEADER: rgb(255, 255, 255);
 		--TEXT: rgb(59, 62, 69);
-		/*--BACKDROP: color (in case it differs)*/
+		/*--BACKDROP: color (uncomment here in case it differs)*/
 	}
 }
 
@@ -53,7 +52,6 @@ body {
 	font-size: 50px;
 	font-weight: 200;
 	color: var(--TEXT);
-	font-family: monospace;
 }
 
 
@@ -61,7 +59,7 @@ body {
 
 h1,
 a {
-	font-family: monospace;
+	font-family: var(--FONT);
 	font-size: 20px;
 	margin: 0;
 }
