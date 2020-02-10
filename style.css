@@ -1,7 +1,8 @@
 /* Arc color scheme by horst3180 */
 
 :root {
-	--FONT: "Ubuntu Mono", "monospace";
+	/* Ubuntu Mono is actually not completely correct, but still better than monospace */
+	--FONT: "DejaVu Sans Mono", "Ubuntu Mono", "monospace";
 
 	/* Arc-dark */
 	--BG: rgb(47, 52, 63);
