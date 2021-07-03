@@ -1,15 +1,12 @@
 {
 	"name": "Startpagina",
-	"description": "2zqa's startpagina, with useful links",
-	"version": "1.9",
+	"description": "Startpage with useful links",
+	"version": "1.10",
 	"icons": {
 		"48": "logo.png"
 	},
 	"chrome_url_overrides": {
 		"newtab": "blank.html"
-	},
-	"chrome_settings_overrides": {
-		"homepage": "blank.html"
 	},
 	"homepage_url": "https://github.com/2zqa/Startpagina",
 	"manifest_version": 2
