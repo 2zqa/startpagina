@@ -8,6 +8,6 @@
 	"chrome_url_overrides": {
 		"newtab": "blank.html"
 	},
-	"homepage_url": "https://github.com/2zqa/Startpagina",
+	"homepage_url": "https://github.com/2zqa/startpagina",
 	"manifest_version": 2
 }
