@@ -1,7 +1,7 @@
 {
 	"name": "Startpagina",
 	"description": "Startpage with useful links",
-	"version": "1.10_01",
+	"version": "1.10.1",
 	"icons": {
 		"48": "logo.png"
 	},
