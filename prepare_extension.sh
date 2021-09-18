@@ -4,7 +4,7 @@ mkdir out
 
 # Firefox
 mv manifest_firefox.json manifest.json
-zip -r out/startpagina_firefox.zip * -x out/ *.git* README.md manifest_chromium.json prepare_extension.sh
+zip -r out/startpagina_firefox.zip * -x out/ *.git* README.md manifest_chromium.json prepare_extension.sh prepare_extension.ps1
 mv manifest.json manifest_firefox.json
 
 # Chromium
