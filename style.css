@@ -4,22 +4,22 @@
 	/* Ubuntu Mono is actually not completely correct, but still better than monospace */
 	--FONT: "DejaVu Sans Mono", "Ubuntu Mono", "monospace";
 
-	/* Arc-dark */
-	--BG: rgb(47, 52, 63);
+	/* Arc */
+	--BG: rgb(231, 232, 235);
 	--FG: rgb(82, 148, 226);
 	--HEADER: rgb(255, 255, 255);
-	--TEXT: rgb(211, 218, 227);
+	--TEXT: rgb(59, 62, 69);
 	--BACKDROP: rgb(64, 69, 82);
 }
 
-@media (prefers-color-scheme: light) {
-	 :root {
-		/* Arc */
-		--BG: rgb(231, 232, 235);
+@media (prefers-color-scheme: dark) {
+	:root {
+		/* Arc-dark */
+		--BG: rgb(47, 52, 63);
 		--FG: rgb(82, 148, 226);
 		--HEADER: rgb(255, 255, 255);
-		--TEXT: rgb(59, 62, 69);
-		/*--BACKDROP: color (uncomment here in case it differs)*/
+		--TEXT: rgb(211, 218, 227);
+		/*--BACKDROP: (uncomment here in case it differs)*/
 	}
 }
 
