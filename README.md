@@ -14,7 +14,7 @@ To create your own startpage, either clone or fork this repository, or simply cl
 
 To run and test the extension for development, sideload the extension in your browser. Please refer to the documentation of your browser on how to do this. Documentation for a few browsers are provided below as examples.
 
-**Note:** rename the manifest\_\[firefox/chromium\].json file to manifest.json to make the working directory, and revert it before building the extension. You cannot sideload the extension otherwise.
+**Note:** rename the appropiate manifest for your browser (e.g. manifest_firefox.json) to manifest.json during testing. You cannot sideload the extension otherwise. Remember to revert this change before building the extension.
 
 * [Firefox](https://extensionworkshop.com/documentation/develop/temporary-installation-in-firefox/)
 * [Edge](https://learn.microsoft.com/en-us/microsoft-edge/extensions-chromium/getting-started/extension-sideloading)
