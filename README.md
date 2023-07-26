@@ -2,28 +2,19 @@
 
 [![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/designed-in-ms-paint.svg)](https://forthebadge.com)
 
-
 A startpage with a bunch of links, categorized in cards.
 
-![Screenshot](https://i.imgur.com/ys2SJeY.png)
+![Screenshot of the startpage](https://i.imgur.com/ys2SJeY.png)
 
 ## Getting started
 
-### Forking
+To create your own startpage, either clone or fork this repository, or simply click "Use this template" above. When done, replace the default links in blank.html with your own.
 
-To maintain your own fork, while staying up-to-date with any changes made here, you can do the following:
+### Testing
 
-1. Fork this repository (may be private)
-2. Clone it and run the following command: `git remote add upstream https://github.com/2zqa/startpagina.git`
-3. To pull in changes, run: `git pull upstream`
+To run and test the extension for development, sideload the extension in your browser. Please refer to the documentation of your browser on how to do this. Documentation for a few browsers are provided below as examples.
 
-Tip: watch this repository to keep up-to-date with any new releases.
-
-### Debugging your code
-
-To run and test the extension for development, please refer to the documentation of your browser.
-
-**Note**: rename the manifest\_\[firefox/chromium\].json file to manifest.json to make the working directory a valid directory, and revert it before building the extension. You cannot sideload the extension otherwise.
+**Note:** rename the manifest\_\[firefox/chromium\].json file to manifest.json to make the working directory, and revert it before building the extension. You cannot sideload the extension otherwise.
 
 * [Firefox](https://extensionworkshop.com/documentation/develop/temporary-installation-in-firefox/)
 * [Edge](https://learn.microsoft.com/en-us/microsoft-edge/extensions-chromium/getting-started/extension-sideloading)
@@ -35,15 +26,15 @@ To build the extension, run `make`. It will create a Chromium and Firefox extens
 
 ## Contributing
 
-**Note**: If you want to create your own startpage with custom links, see [forking](#forking)
+**Note:** If you want to create your own startpage with custom links, see [Getting started](#getting-started).
 
-If you're new to contributing in general, please read [the official GitHub quickstart guide](https://docs.github.com/get-started/quickstart/contributing-to-projects). In short:
+If you're new to contributing to open source, please read [the official GitHub quickstart guide](https://docs.github.com/get-started/quickstart/contributing-to-projects). In short:
 
 1. Fork this repository and clone it
 2. Make your changes
 3. Submit a pull request
 
-**Note**: If you add any source files, make sure to update the Makefile `sourcefiles` variable to reflect this.
+**Note:** In case you add any source files, make sure to update the Makefile `sourcefiles` variable to reflect this.
 
 ## License
 
