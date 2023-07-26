@@ -15,7 +15,7 @@ $(BUILDDIR)/$(name)_chromium: $(sourcefiles) manifest_chromium.json | $(BUILDDIR
 	cp $(sourcefiles) manifest_chromium.json $(BUILDDIR)/$(name)_chromium/
 	mv $(BUILDDIR)/$(name)_chromium/manifest_chromium.json $(BUILDDIR)/$(name)_chromium/manifest.json
 
-$(BUILDDIR)/:
+$(BUILDDIR):
 	mkdir $(BUILDDIR)
 
 .PHONY: clean
