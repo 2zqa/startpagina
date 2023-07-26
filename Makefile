@@ -23,4 +23,4 @@ $(BUILDDIR):
 
 .PHONY: clean
 clean:
-	rm -rf $(BUILDDIR)/$(name)_firefox.zip $(BUILDDIR)/$(name)_chromium
+	rm -rf $(BUILDDIR)/
