@@ -8,13 +8,13 @@ A startpage with a bunch of links, categorized in cards.
 
 ## Getting started
 
-To create your own startpage, either clone or fork this repository, or simply click "Use this template" above. When done, replace the default links in blank.html with your own.
+To create your own startpage, either clone or fork this repository, or simply click "Use this template" above. You can then replace the default links in blank.html with your own.
 
 ### Testing
 
-To run and test the extension for development, sideload the extension in your browser. Please refer to the documentation of your browser on how to do this. Documentation for a few browsers are provided below as examples.
+To run and test the extension for development, sideload the extension in your browser. Please refer to the documentation of your browser on how to do this. A few are provided below.
 
-**Note:** rename the appropiate manifest for your browser (e.g. manifest_firefox.json) to manifest.json during testing. You cannot sideload the extension otherwise. Remember to revert this change before building the extension.
+**Note:** Rename the appropiate manifest for your browser (e.g. manifest_firefox.json) to manifest.json during testing. You cannot sideload the extension otherwise. Remember to revert this change before building the extension.
 
 * [Firefox](https://extensionworkshop.com/documentation/develop/temporary-installation-in-firefox/)
 * [Edge](https://learn.microsoft.com/en-us/microsoft-edge/extensions-chromium/getting-started/extension-sideloading)
@@ -28,7 +28,7 @@ To build the extension, run `make`. It will create a Chromium and Firefox extens
 
 **Note:** If you want to create your own startpage with custom links, see [Getting started](#getting-started).
 
-If you're new to contributing to open source, please read [the official GitHub quickstart guide](https://docs.github.com/get-started/quickstart/contributing-to-projects). In short:
+Thanks for considering contributing! If you're new to contributing to open source, please read [the official GitHub quickstart guide](https://docs.github.com/get-started/quickstart/contributing-to-projects). In short:
 
 1. Fork this repository and clone it
 2. Make your changes
