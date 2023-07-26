@@ -1,5 +1,1 @@
-# Output folder from prepare_extension.sh
-out/
-
-# System stuff
-.DS_Store
+build/
