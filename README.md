@@ -22,7 +22,7 @@ To run and test the extension for development, sideload the extension in your br
 
 ### Building
 
-To build the extension, run `make`. It will create a Chromium and Firefox extension in the build directory. If you're using Windows, you can use [WSL](https://learn.microsoft.com/en-us/windows/wsl/).
+To build the extension, run `make`. It will create a Firefox and Chromium extension in the build directory. If you're using Windows, you can use [WSL](https://learn.microsoft.com/en-us/windows/wsl/).
 
 ## Contributing
 
