@@ -4,7 +4,7 @@
 
 A startpage with a bunch of links, categorized in cards.
 
-![Screenshot of the startpage](https://i.imgur.com/ys2SJeY.png)
+![Screenshot of the startpage](https://github.com/2zqa/startpagina/assets/25235249/3550e7f1-5d62-46f6-b23f-c89c9fa42053)
 
 ## Getting started
 
