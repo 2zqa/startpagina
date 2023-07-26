@@ -3,6 +3,7 @@ BUILDDIR=build
 name=startpagina
 sourcefiles=blank.html style.css clock.js LICENSE logo.png
 
+.PHONY: all
 all: $(BUILDDIR)/$(name)_firefox.zip $(BUILDDIR)/$(name)_chromium
 
 $(BUILDDIR)/$(name)_firefox.zip: $(sourcefiles) manifest_firefox.json | $(BUILDDIR)
