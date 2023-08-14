@@ -1,6 +1,6 @@
 # Startpagina
 
-[![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/designed-in-ms-paint.svg)](https://forthebadge.com)
+![forthebadge](https://github.com/2zqa/startpagina/assets/25235249/753e518d-cd49-4f07-aac7-59cc1e3006ff) ![forthebadge](https://github.com/2zqa/startpagina/assets/25235249/15865f8a-ccc0-42ba-804f-9238db48998a)
 
 A startpage with a bunch of links, categorized in cards.
 
