@@ -6,7 +6,7 @@
 		"48": "logo.png"
 	},
 	"chrome_url_overrides": {
-		"newtab": "blank.html"
+		"newtab": "startpage.html"
 	},
 	"homepage_url": "https://github.com/2zqa/startpagina",
 	"manifest_version": 3
