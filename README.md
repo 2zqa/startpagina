@@ -8,33 +8,29 @@ A startpage with a bunch of links, categorized in cards.
 
 ## Getting started
 
-To create your own startpage, either clone or fork this repository, or simply click "Use this template" above. You can then replace the default links in blank.html with your own.
+To create your own startpage, either clone or fork this repository, or simply click "Use this template" above. You can then replace the default links in startpage.html with your own. To install/sideload extensions, see the following documentation pages:
 
-### Testing
+* Firefox
+    * [Sideloading](https://extensionworkshop.com/documentation/develop/temporary-installation-in-firefox/)
+    * [Submitting an add-on](https://extensionworkshop.com/documentation/publish/submitting-an-add-on/) (Free)
+* Edge
+    * [Sideloading](https://learn.microsoft.com/en-us/microsoft-edge/extensions-chromium/getting-started/extension-sideloading)
+    * [Submitting an extension](https://learn.microsoft.com/en-us/microsoft-edge/extensions-chromium/publish/publish-extension) (Free)
+* Chrome
+    * [Sideloading](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked)
+    * [Submitting an extension](https://developer.chrome.com/docs/webstore/publish) (Costs $5 💸)
 
-To run and test the extension for development, sideload the extension in your browser. Please refer to the documentation of your browser on how to do this. A few are provided below.
+### Prerequisites
 
-**Note:** Rename the appropiate manifest for your browser (e.g. manifest_firefox.json) to manifest.json during testing. You cannot sideload the extension otherwise. Remember to revert this change before building the extension.
+- [web-ext](https://github.com/mozilla/web-ext)
 
-* [Firefox](https://extensionworkshop.com/documentation/develop/temporary-installation-in-firefox/)
-* [Edge](https://learn.microsoft.com/en-us/microsoft-edge/extensions-chromium/getting-started/extension-sideloading)
-* [Chrome](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked)
+### Running locally
+
+Run `make run/firefox-desktop` or `make run/chromium` to start the extension in a new browser window.
 
 ### Building
 
-To build the extension, run `make`. It will create a Firefox and Chromium extension in the build directory. If you're using Windows, you can use [WSL](https://learn.microsoft.com/en-us/windows/wsl/).
-
-## Contributing
-
-**Note:** If you want to create your own startpage with custom links, see [Getting started](#getting-started).
-
-Thanks for considering contributing! If you're new to contributing to open source, please read [the official GitHub quickstart guide](https://docs.github.com/get-started/quickstart/contributing-to-projects). In short:
-
-1. Fork this repository and clone it
-2. Make your changes
-3. Submit a pull request
-
-**Note:** In case you add any source files, make sure to update the Makefile `sourcefiles` variable to reflect this.
+Run `make`. This will generate zip files for each supported browser in the `web-ext-artifacts` directory.
 
 ## License
 
