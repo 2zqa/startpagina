@@ -1,0 +1,12 @@
+{
+  "name": "Startpagina",
+  "description": "Startpage with useful links",
+  "version": "0.0.1",
+  "icons": {
+    "48": "logo.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "startpage.html"
+  },
+  "homepage_url": "https://github.com/2zqa/startpagina"
+}

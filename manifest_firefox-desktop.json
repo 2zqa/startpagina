@@ -1,0 +1,6 @@
+{
+  "chrome_settings_overrides": {
+    "homepage": "startpage.html"
+  },
+  "manifest_version": 2
+}

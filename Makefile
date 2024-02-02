@@ -1,30 +1,30 @@
-BUILDDIR=build
-
-name=startpagina
-sourcefiles=blank.html style.css clock.js LICENSE logo.png
+NAME=$(notdir $(CURDIR))
+IGNORE=manifest_*.json README.md Makefile scripts/
+VERSION=$(shell jq -r .version manifest_base.json)
+PLATFORMS=chromium firefox-desktop
 
 .PHONY: all
-all: $(BUILDDIR)/$(name)_firefox.zip $(BUILDDIR)/$(name)_chromium
+all: $(PLATFORMS)
 
-$(BUILDDIR)/$(name)_firefox.zip: $(sourcefiles) manifest_firefox.json | $(BUILDDIR)
-	@echo "=> Preparing to build $(name)_firefox.zip"
-	rm -f $(BUILDDIR)/$(name)_firefox.zip
-	mv manifest_firefox.json manifest.json
-	zip -r $(BUILDDIR)/$(name)_firefox.zip $(sourcefiles) manifest.json
-	mv manifest.json manifest_firefox.json
-	@echo "=> Successfully built $(name)_firefox.zip"
+.PHONY: $(PLATFORMS)
+$(PLATFORMS):
+	cat manifest_base.json manifest_$(notdir $@).json | jq -s add > manifest.json
+	web-ext build --overwrite-dest --ignore-files=$(IGNORE) --filename $(NAME)-$(notdir $@)-$(VERSION).zip
 
-$(BUILDDIR)/$(name)_chromium: $(sourcefiles) manifest_chromium.json | $(BUILDDIR)
-	@echo "=> Preparing to build $(name)_chromium"
-	rm -rf $(BUILDDIR)/$(name)_chromium
-	mkdir $(BUILDDIR)/$(name)_chromium
-	cp $(sourcefiles) manifest_chromium.json $(BUILDDIR)/$(name)_chromium/
-	mv $(BUILDDIR)/$(name)_chromium/manifest_chromium.json $(BUILDDIR)/$(name)_chromium/manifest.json
-	@echo "=> Successfully built $(name)_chromium"
+.PHONY: $(addprefix run/,$(PLATFORMS))
+$(addprefix run/,$(PLATFORMS)):
+	cat manifest_base.json manifest_$(notdir $@).json | jq -s add > manifest.json
+	web-ext run -t $(notdir $@)
 
-$(BUILDDIR):
-	mkdir $(BUILDDIR)
+.PHONY: lint/all
+lint/all: $(addprefix lint/,$(PLATFORMS))
+
+.PHONY: $(addprefix lint/,$(PLATFORMS))
+$(addprefix lint/,$(PLATFORMS)):
+	cat manifest_base.json manifest_$(notdir $@).json | jq -s add > manifest.json
+	web-ext lint
 
 .PHONY: clean
 clean:
-	rm -rf $(BUILDDIR)/
+	rm -rf web-ext-artifacts
+	rm -f manifest.json
